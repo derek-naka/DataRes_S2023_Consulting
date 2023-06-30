@@ -1,2 +1,3 @@
 # DataRes_S2023_Consulting
-Working with a wine pairing company, Winosaurus, to make an image processing application to read the text off of wine bottles.
+Working with a wine pairing company, Winosaurus, to make an image processing application to read the text off of wine bottles.  This will be paired with a flask application which will also allow users to upload images to the Amazon S3 bucket for Winosaurus (for internal use only) and make any corrections to the data frame if the output doesn't match what is on the bottle.
+I used PyTesseract for this project since it is the best free option that is able to read "hand writing" compared to other optical character regoniticion models.  The two that are better (Amazon Textract & Google Platform) both cost money and we don't want to put that burden on our client.  This repository only has the code for the image processing & pre-image processesing since I did not work on the flask application.
